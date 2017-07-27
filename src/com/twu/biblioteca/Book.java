@@ -6,13 +6,15 @@ package com.twu.biblioteca;
 public class Book {
   private String title;
   private String author;
+  private String publishDate;
 
-  public Book(String title, String author) {
+  public Book(String title, String author, String publishDate) {
     this.title = title;
     this.author = author;
+    this.publishDate = publishDate;
   }
 
-  public String printDetail(){
-    return String.format("title:%-8s author:%-8s", title, author);
+  public String printDetail() {
+    return String.format("title:%-8s author:%-8s publishDate:%-8s", title, author, publishDate);
   }
 }
